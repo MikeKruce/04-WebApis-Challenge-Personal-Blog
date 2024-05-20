@@ -1,0 +1,50 @@
+#blogPosts {
+    margin-top: 2rem;
+}
+
+header {
+    background-color: #cccaca;
+    background-size: 20px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-shadow: black 3px -1px;
+    font-size: 20px;
+    
+}
+
+
+darkMode {
+float: right;
+text-align: center;
+}
+
+/* Default, light mode */
+body {
+    --body-color: black;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --body-color: white;
+    }
+}
+
+body.light-mode {
+    --body-color: black;
+}
+
+body.dark-mode {
+    --body-color: white;
+}
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 25vh;
+    flex-grow: 1;
+}
