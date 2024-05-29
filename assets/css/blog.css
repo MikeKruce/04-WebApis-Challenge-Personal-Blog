@@ -1,0 +1,85 @@
+#blogPosts {
+    margin:auto;
+    display: flexbox;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding-left: 200px;
+}
+
+.blog-post {
+    margin: 1rem;
+    padding: 1rem;
+    background-color: #e2e2e2;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    text-align: center;
+}
+
+header {
+    background-color: #cccaca;
+    background-size: 20px;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    text-shadow: black 3px -1px;
+    font-size: 20px;
+    
+}
+
+
+darkMode {
+float: right;
+text-align: center;
+}
+
+/* Default, light mode */
+body {
+    --body-color: black;
+    align-content: center;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --body-color: white;
+    }
+}
+
+body.light-mode {
+    --body-color: black;
+}
+
+body.dark-mode {
+    --body-color: white;
+}
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 1rem;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 25vh;
+    flex-grow: 1;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark-mode button {
+    background-color: #555;
+    color: #fff;
+}
+
+body.dark-mode button:hover {
+    background-color: #777;
+}
+
+body.dark-mode footer {
+    background-color: #222;
+    color: #fff;
+}
